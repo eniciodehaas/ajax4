@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Enicio de Haas MD1A">
+  <title>Weer API</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <h4>Weer API
+      <a href="http://weerlive.nl/delen.php">http://weerlive.nl/delen.php</a>
+    </h4>
+    <div id="input"><input type="button" value="laat een selectie zien" id="weatherButton">
+    <input type="button" value="laat alle data zien" id="weatherButton2">
+    <input type="button" value="ticker tape" id="weatherTickerTape"></div>
+    <br>
+    <div id="weatherHere"></div>
+    <div id="completeWeatherHere"></div>
+  </div>
+  <div id="weatherTickerTape">
+    <marquee behavior="scroll" direction="left" scrollamount="10" id="tt">
+      <h3 id="plaats"></h3>
+      <h3 id="temperatuur"></h3>
+      <h3 id="icon"></h3>
+      <h3 id="windrichting"></h3>
+      <h3 id="windsnelheid"></h3>
+    </marquee>
+  </div>
+  <script src="ajax_callback.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
